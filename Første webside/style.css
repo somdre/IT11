@@ -1,0 +1,397 @@
+.underoverskrift {
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#overskrift {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+
+.m {
+    margin-top: 10rem;
+}
+
+.i {
+    margin: 1rem;
+    height: 350px;
+    border-radius: 10px;
+
+}
+
+.uuo {
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+    font-weight: 500;
+    overflow-x: hidden;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    margin: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: hsl(250, 18%, 19%,75%);
+}
+.pu {
+    text-align: center;;
+    max-width: 43rem;
+}
+
+#registerButton {
+    color: white;
+    background-color: rgb(52,108,255);
+    font-weight: 600;
+    border: 0px;
+    border-radius: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+    height: 40px;
+    margin-bottom: 5rem;
+}
+
+#registerButton:hover {
+    background-color: blue;
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    color: hsl(250, 18%, 19%);
+    font-size: 16px;
+    overflow-x: hidden;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.9) ;
+    background: url("https://wallpaperaccess.com/full/2379729.jpg") repeat fixed center;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: fixed;
+    justify-content: space-between;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-content: center;
+    align-items: center;
+    gap: 300px;
+    height: 4.5rem;
+    font-size: 14px;
+    line-height: 22px;
+    color: hsl(240, 18%, 19%);
+    background:hsla(0,0%,100%,90%);
+    box-shadow:0px 0px 10px hsla(0,0%,0%,10%);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    animation: transitionIn 1s;
+}
+
+.c {
+    color: hsl(250, 18%, 19%);
+}
+
+table {
+    display:flex;
+    justify-content: center;
+}
+
+th img {
+    height:200px;
+    width:500;
+}
+
+.p {
+    text-align:justify;
+    font-weight: normal;
+    max-width: 50rem;
+}
+
+.border {
+    border-radius: 0.5rem;
+}
+
+#logo {
+    padding-top: 0.5rem;
+}
+
+.headerElements {
+    list-style-type: none;
+    display:inline-block;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.logoText {
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(250, 18%, 19%);
+    margin: 0rem;
+    box-shadow: 0px 0px 0px hsla(0,0%,0%,100);
+    transition:0.3s;    
+}
+
+.logoText:hover {
+    box-shadow: 0px 3px 0px hsla(0,0%,0%,100);
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.ch1 {
+    text-align: center;
+}
+
+#lineposition {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+#hamburger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    background:hsla(0,0%,100%);
+    box-shadow:0px 0px 10px hsla(0,0%,0%,10%);
+    top: 0;
+    left: -225px;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 2px solid hsl(250, 18%, 19%,10%);
+    color: hsl(250, 18%, 19%);
+    font-size: 16px;
+    text-align: left; 
+}
+
+.wrapper .sidebar ul li, .wrapper .sidebar ul{
+    padding-left: 0;
+
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+    box-shadow: 0px 0px 0px hsla(0,0%,0%,100);
+    transition:0.3s;
+    
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: hsl(250, 18%, 19%);
+    box-shadow: 0px 3px 0px hsla(0,0%,0%,100);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: hsl(250, 18%, 19%);
+}
+
+
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+body.active .wrapper .sidebar{
+    left: 0px;
+}
+
+#meny {
+    margin-right: 45px;
+    padding: 0;
+}
+
+body.active #meny {
+    margin-left: 230px;
+    top: 5px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+.icon, .fas {
+    height: 25px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 10rem;
+    box-shadow:0px 0px 10px hsla(0,0%,0%,10%);
+}
+
+.foot{
+    padding: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left:10rem;
+    margin-right:10rem;
+}
+
+.cw {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.o {
+    font-weight: 700;
+}
+
+footer div div div {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    color: hsl(250, 18%, 19%);
+    text-align: right;
+}
+
+.l {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+/*
+.an:hover {
+    border-bottom: 0px solid hsla(0,0%,100%,0%);
+    text-decoration: none;
+}
+
+.an:not(:hover) {
+    border-bottom: 0px solid hsla(0,0%,100%,0%);
+    text-decoration: none
+}
+
+.bb {
+    border-bottom: 0px solid hsla(0,0%,100%,0%);
+    transition: border-bottom 0.1s;
+}
+
+.bb:hover {
+    border-bottom: 4px solid hsla(0,0%,100%,0%);
+}
+
+
+
+/* KEYFRAMES */
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-50deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes borderIn {
+    from {
+        border-bottom: 0px solid hsla(0,0%,100%,0%);
+    }
+    to {
+        border-bottom: 4px solid hsla(0,0%,100%,0%);
+    }
+}
+
+/*
+.scrollbar {
+	background-color: #ffffff;
+	float: left;
+	height: 300px;
+	width: 65px;
+	overflow-y: scroll;
+}
+
+.force-overflow {
+	min-height: 450px;
+}
+
+#style-1::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
+#style-1::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}

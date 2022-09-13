@@ -1,0 +1,49 @@
+p {
+    color: hsl(0,0,0);
+    margin-left: 25px;
+}
+
+.fs {
+    background-color: rgb(110, 110, 110);
+}
+
+.fo {
+    background-color: yellow;
+    color: rgb(110, 110, 110);
+}
+
+html, body {
+    height:100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boks {
+    height: 600px;
+    width: 600px;
+    background-color: hsl(255,100,100);
+    color: hsl(0,0,0);
+    border: 2px dashed rgb(59, 59, 59);
+    padding: 2em;
+}
+
+#boks h1 {
+    color:red;
+}
+
+p:nth-child(odd) {
+    background-color: green;
+    border: solid 2px red;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+p:nth-child(odd):hover {
+    border: solid 2px yellow;
+    background-color: white;
+}

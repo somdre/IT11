@@ -1,0 +1,90 @@
+html {
+    font-family: system-ui;
+    color: hsl(250, 18%, 19%);
+    overflow-x: hidden;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(237, 237, 237);
+    height:100%;
+    width: 100%;
+}
+
+#main-page {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 440px;
+    height: 338px;
+    box-shadow:0px 0px 10px hsla(0,0%,0%,10%);
+    padding-top: 44px;
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.title {
+    margin: 0;
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+input {
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-width: 2px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-color: gainsboro;
+}
+
+p{
+    font-size: 0.8rem;
+    margin: 0;
+    color: rgb(0, 76, 255);
+    text-decoration: none;
+}
+
+p:hover {
+    color: rgb(36, 0, 154);
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+li {
+    list-style-type: none;
+    display:inline-block;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+}
+
+button {
+    color: rgb(250, 250, 250);
+    background-color: rgb(0, 76, 255);
+    width: 4rem;
+    height: 1.5rem;
+    border-width: 0;
+}
+
+button:hover {
+    background-color: rgb(36, 0, 154);
+}

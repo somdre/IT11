@@ -1,52 +1,53 @@
-/* 
-html, body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
+ html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
 #hoved {
-    display: grid;
-    background-color: #c6c6c6;
-    grid-gap: 1rem;
-    width: 500px;
-    height: 500px;
-    grid-template-areas: 
-    "asd asd asd asd"
-    "d d d d d"
-    ;
-  }
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 5px;
+  background-color: #c6c6c6;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  grid-template-areas: 
+  "t t t t t t t t t t t t" 
+  ". . . . . . . . . . . ."
+  "v . h h h h h h h h h ."
+  "v . h h h h h h h h h ."
+  "v . h h h h h h h h h ."
+  "v . h h h h h h h h h ."
+  "v . h h h h h h h h h ."
+  "v . h h h h h h h h h ."
+  "v . a a a a a a a a a a"
+  ". . . . . . . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . . . . . . ."
+  "f f f f f f f f f f f f"
+  ;
+}
+
+#asd {
+  font-size: 16px;
+  height: 100px;
+}
+
 #hoved > div {
-    background-color: #aac9c6;
-    border: 1px solid black;
+  background-color: #aac9c6;
+  border: 1px solid black;
 }
 
-.asd {
-    grid-area: t;
-}
+.topp    { grid-area : t;}
+.venstre { grid-area : v; }
+.hoyre   { grid-area : h; }
+.footer  { grid-area : f; }
+.a       { grid-area : a; }
 
-.asd {
-    grid-area: d;
+.topp {
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
-*/
-#hoved {
-    width: 600px;
-    height: 400px;
-    display: grid;
-    gap: 5px;
-    background-color: #c6c6c6;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "t t t t t t" 
-    "v . h h h h"
-    "v . h h h h";
-  }
-  #hoved > div {
-    background-color: #aac9c6;
-    border: 1px solid black;
-  }
-  .topp    { grid-area : t; }
-  .venstre { grid-area : v; }
-  .hoyre   { grid-area : h; }

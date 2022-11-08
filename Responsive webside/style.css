@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  color: black;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#hoved {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 5px;
+  background-color: #c6c6c6;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas: 
+  "t t t t t t t t t t t t" 
+  "h h h h h h h h h h h h"
+  "h h h h h h h h h h h h"
+  "h h h h h h h h h h h h"
+  "h h h h h h h h h h h h"
+  "h h h h h h h h h h h h"
+  "h h h h h h h h h h h h"
+  "h h h h h h h h h h h h"
+  "h h h h h h h h h h h h"
+  "f f f f f f f f f f f f"
+  ;
+}
+
+#hoved > div {
+  background-color: #aac9c6;
+  border: 1px solid black;
+}
+
+.topp    { grid-area : t;}
+.hoyre   { grid-area : h; }
+.footer  { grid-area : f; }
+
+.topp {
+  display: grid;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.navbarListe {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  color: rgb(101, 93, 255);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+
+#hamburger {
+  display: none;
+}
+
+.asd {
+  font-size: 1.75em;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: rgb(230, 173, 173);
+  }
+  .navbarListe {
+    display: none;
+  }
+  #hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

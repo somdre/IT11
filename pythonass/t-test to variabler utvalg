@@ -1,0 +1,21 @@
+from pylab import *
+import scipy.stats as stats
+
+# Leser inn dataene:
+x=[201, 221, 228, 237, 326, 235, 240, 257, 284, 210]
+y=[200, 216, 224, 216, 296, 195, 207, 247, 260, 209]
+
+# Manuel beregning av test observator og p-verdi:
+m=len(x); n=len(y)                                           # antall observasjoner
+snitt_x=mean(x); snitt_y=mean(y)                             # gjennomsnitt
+sd_x=std(x,ddof=1); sd_y=std(y,ddof=1)                       # empirisk standardavvik
+sp=sqrt(((m-1)/(m+n-2))*sd_x**2+((n-1)/(m+n-2))*sd_y**2)     # felles empirisk standardavvik
+t=(snitt_x-snitt_y)/(sp*sqrt(1/m+1/n))                       # t-observator
+p=2*(1-stats.t.cdf(abs(t),m+n-2))                            # P-verdi
+print("t-observator:",round(t,3))
+print("P-verdi:",round(p,3))
+
+# Direkte ved kommando for t-test for to utvalg:
+test_xy=stats.ttest_ind(x,y)
+print("t-observator:",round(test_xy.statistic,3))
+print("P-verdi:",round(test_xy.pvalue,3))

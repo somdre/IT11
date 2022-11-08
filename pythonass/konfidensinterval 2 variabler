@@ -1,0 +1,19 @@
+from pylab import *
+import scipy.stats as stats
+
+# Leser inn dataene:
+x=[603, 628, 610, 639, 579, 637, 653, 612, 623, 550]
+y=[455, 456, 523, 458, 460, 435, 489, 399, 525, 464, 450]
+
+# Beregner diverse størrelser
+m=len(x); n=len(y)                                            # antall observasjoner
+snitt_x=mean(x); snitt_y=mean(y)                              # gjennomsnitt
+sd_x=std(x,ddof=1); sd_y=std(y,ddof=1)                        # empirsik standardavvik for hver gruppe
+sp=sqrt(((m-1)/(m+n-2))*sd_x**2+((n-1)/(m+n-2))*sd_y**2)      # felles empirisk standardavvik
+t_025=stats.t.ppf(0.975,m+n-2)                               # t-pt_{n+m-2}(0,025)
+
+
+# Finner konfidensintervallet:
+nedre=snitt_x-snitt_y-t_025*sp*sqrt(1/m+1/n)
+ovre=snitt_x-snitt_y+t_025*sp*sqrt(1/m+1/n)
+print("95% konfidensintervall:", round(nedre,1), round(ovre,1))
